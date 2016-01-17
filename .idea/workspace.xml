@@ -27,8 +27,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.784127">
-              <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.64920634">
+              <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
               <folding>
                 <element signature="e#0#44#0" expanded="false" />
               </folding>
@@ -200,7 +200,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453065247949</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add PUT capability">
+      <created>1453066043447</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1453066043447</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -231,9 +237,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="add movies.json and fix typo in server.js" />
     <MESSAGE value="Add POST capability" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add POST capability" />
+    <MESSAGE value="Add PUT capability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add PUT capability" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -250,8 +258,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.784127">
-          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.64920634">
+          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
           <folding>
             <element signature="e#0#44#0" expanded="false" />
           </folding>
