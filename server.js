@@ -5,7 +5,8 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     _ = require('underscore'),
     json = require('./movies.json'),
-    app = express();
+    app = express(),
+    request = require('request');
 
 app.set('port', process.env.PORT || 3500);
 
@@ -62,6 +63,23 @@ router.delete('/:id', function(req,res){
         json.splice(indexToDel,1);
     }
     res.json(json);
+});
+router.get('/external-api', function(req,res){
+    request({
+        method: 'GET',
+        uri: 'http://localhost:' + (process.env.PORT || 3500)
+    }, function(error, response, body){
+        if(error) {throw error;}
+
+        var movies = [];
+        _.each(JSON.parse(body), function(elem, index){
+            movies.push({
+                Title: elem.Title,
+                Rating: elem.Rating
+            });
+        });
+        res.json(_.sortBy(movies, 'Rating').reverse());
+    });
 });
 app.use('/', router);
 
