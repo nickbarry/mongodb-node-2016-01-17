@@ -13,7 +13,26 @@ app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
 
 var router = new express.Router();
-// TODO: Set up endpoints
+router.get('/test', function(req,res){
+    var data = {
+        name: 'Jason Krol',
+        website: 'http://kroltech.com'
+    };
+
+    res.json(data);
+});
+router.get('/', function(req,res){
+    res.json(json);
+});
+router.post('/', function(req,res){
+    // insert new item (validate first)
+    if(req.body.Id && req.body.Title && req.body.Director && req.body.Year && req.body.Rating){
+        json.push(req.body);
+        res.json(json);
+    }else{
+        res.json(500, {error: 'There was an error!'});
+    }
+});
 app.use('/', router);
 
 var server = app.listen(app.get('port'), function(){
