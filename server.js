@@ -7,7 +7,7 @@ var express = require('express'),
     json = require('./movies.json'),
     app = express();
 
-app.set('port', process.ev.PORT || 3500);
+app.set('port', process.env.PORT || 3500);
 
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
